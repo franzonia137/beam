@@ -51,8 +51,8 @@ Beam source:
 1. Use `ParDo` and `GroupByKey`.
 
 
-`Splittable DoFn` is the recommended option, as it's the most recent source framework for both
-bounded and unbounded sources. This is meant to replace the `Source` APIs(
+Splittable DoFn is the recommended and standard API for both bounded and unbounded sources. Legacy Source APIs (BoundedSource and UnboundedSource) exist but are deprecated; new connectors should use Splittable DoFn.
+This is meant to replace the `Source` APIs (
 [BoundedSource](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/BoundedSource.html) and
 [UnboundedSource](https://beam.apache.org/releases/javadoc/current/org/apache/beam/sdk/io/UnboundedSource.html))
 in the new system. Read
