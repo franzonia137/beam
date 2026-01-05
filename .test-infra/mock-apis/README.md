@@ -16,6 +16,40 @@
     specific language governing permissions and limitations
     under the License.
 -->
+> **Total Steps:** 14  
+> This guide covers development, testing, local execution, and deployment.
+> # Development & Testing 
+  
+  Install development dependencies.
+  
+  Run unit tests.
+  
+  Identify Quota ID for integration tests
+  
+  Discover service endpoints
+  
+  Port-forward services for local integration testing
+  # Local Execution
+  
+  Install and start Redis locally
+  
+  Start the Refresher service
+  
+  Start the Echo service
+  # Deployment (Google Cloud)
+  
+  Provision dependent resources using Terraform
+  
+  Configure KO_DOCKER_REPO environment variable
+  
+  Connect to the Kubernetes cluster
+  
+  Provision the Redis instance
+  
+  Deploy the Echo service
+  
+  Deploy Refresher service(s) using Kustomize overlays
+
 
 # Overview
 
