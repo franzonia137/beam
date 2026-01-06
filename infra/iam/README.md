@@ -19,7 +19,7 @@
 
 # Infrastructure Permissions Management
 
-This document outlines the structure of the Beam project control of infrastructure permissions and
+This document outlines the structure of the Beam project control over infrastructure permissions and
  provides instructions on how to manage a user or role's permissions.
 
 ## Overview
@@ -80,6 +80,15 @@ beam_viewer < beam_writer < beam_infra_manager < beam_admin
 ```
 
 ### Available Roles
+
+| Role               | Access Level            | Inherits From | Typical Use Case |
+|--------------------|-------------------------|---------------|------------------|
+| beam_viewer        | Read-only               | —             | Monitoring & observation |
+| beam_writer        | Limited write           | beam_viewer  | Active contributors |
+| beam_infra_manager | Infrastructure editor   | beam_writer  | Infra maintainers |
+| beam_admin         | Full administrative     | All roles    | Project administrators |
+
+
 
 #### beam_viewer
 - **Description**: Read-only access to the Beam project resources
